@@ -1,14 +1,12 @@
-class Pow2:
-    def __init__(self, stop):        #Максимальний показник степеня.
-        self.stop = stop
+import random
+import string
 
-    def show(self):
-        p = 0
-        v = 1
-        while p <= self.stop:        #Працюємо, поки степінь не досягне stop
-            print(v)
-            v = v * 2
-            p = p + 1
+def rand_letters(c):
+    i = 0
+    abc = string.ascii_lowercase
+    while i < c:
+        print(random.choice(abc))      #Випадково вибирамо одну літеру з abc.
+        i = i + 1
 
 
-Pow2(5).show()
+rand_letters(10)
