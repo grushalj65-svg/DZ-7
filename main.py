@@ -1,12 +1,14 @@
-import random
-import string
+def make_sum():
+    box = [0]
 
-def rand_letters(c):
-    i = 0
-    abc = string.ascii_lowercase
-    while i < c:
-        print(random.choice(abc))      #Випадково вибирамо одну літеру з abc.
-        i = i + 1
+    def add(x):
+        box[0] = box[0] + x
+        print(box[0])
+
+    return add
 
 
-rand_letters(10)
+s = make_sum()
+s(5)
+s(3)
+s(10)
