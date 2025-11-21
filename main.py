@@ -1,10 +1,14 @@
-def p3(stop):
-    v = 1
-    p = 0
-    while p <= stop:
-        print(v)
-        v = v * 3
-        p = p + 1
+class Pow2:
+    def __init__(self, stop):        #Максимальний показник степеня.
+        self.stop = stop
+
+    def show(self):
+        p = 0
+        v = 1
+        while p <= self.stop:        #Працюємо, поки степінь не досягне stop
+            print(v)
+            v = v * 2
+            p = p + 1
 
 
-p3(5)
+Pow2(5).show()
