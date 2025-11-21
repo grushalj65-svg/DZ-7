@@ -1,14 +1,11 @@
-def make_sum():
-    box = [0]
-
-    def add(x):
-        box[0] = box[0] + x
-        print(box[0])
-
-    return add
+def make_plus(a):
+    def f(x):
+        print(x + a)
+    return f
 
 
-s = make_sum()
-s(5)
-s(3)
-s(10)
+p = make_plus(10)       #Функція яка завжди додає 10
+p(5)
+
+q = make_plus(3)
+q(7)
